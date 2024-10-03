@@ -33,10 +33,11 @@ export const Nav = () => {
       }
     >
       <div>
-        <HumeLogo className={"h-5 w-auto"} />
+        <h1>RekBot AI</h1>
+        {/* <HumeLogo className={"h-5 w-auto"} /> */}
       </div>
       <div className={"ml-auto flex items-center gap-1"}>
-        <Button
+        {/* <Button
           onClick={() => {
             window.open(
               pkg.homepage,
@@ -51,7 +52,7 @@ export const Nav = () => {
             <Github className={"size-4"} />
           </span>
           <span>Star on GitHub</span>
-        </Button>
+        </Button> */}
         <Button
           onClick={toggleDark}
           variant={"ghost"}
