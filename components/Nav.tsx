@@ -1,11 +1,9 @@
 "use client";
 
-import { useLayoutEffect, useState } from "react";
-import HumeLogo from "./logos/Hume";
-import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
-import Github from "./logos/GitHub";
-import pkg from '@/package.json';
+import { useLayoutEffect, useState } from "react";
+import RekbotLogo from "./logos/Hume";
+import { Button } from "./ui/button";
 
 export const Nav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,12 +27,12 @@ export const Nav = () => {
   return (
     <div
       className={
-        "px-4 py-2 flex items-center h-14 z-50 bg-card border-b border-border"
+        "px-4 py-4 flex items-center h-16 z-50 bg-card border-b border-border"
       }
     >
-      <div>
+      <div className="flex justify-center items-center gap-3 m-2">
+        <RekbotLogo className={"h-5 pr-2"}/>
         <h1>RekBot AI</h1>
-        {/* <HumeLogo className={"h-5 w-auto"} /> */}
       </div>
       <div className={"ml-auto flex items-center gap-1"}>
         {/* <Button
