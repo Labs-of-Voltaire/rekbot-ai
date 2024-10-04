@@ -21,7 +21,17 @@ export default function ClientComponent({
       }
     >
       <VoiceProvider
+        // sessionSettings={
+        //    {
+        //     type: "session_settings",
+        //     // customSessionId: "pass a sessionId to continue a conversation",
+        //    }
+        // }
         auth={{ type: "accessToken", value: accessToken }}
+
+        queryParams={
+          { config_id: String(process.env.NEXT_PUBLIC_CONFIG_ID) }
+        }
         onMessage={() => {
           if (timeout.current) {
             window.clearTimeout(timeout.current);
