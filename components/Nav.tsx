@@ -2,7 +2,7 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useLayoutEffect, useState } from "react";
-import RekbotLogo from "./logos/Hume";
+import RekbotLogo from "./logos/Rekbot";
 import { Button } from "./ui/button";
 
 export const Nav = () => {
